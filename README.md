@@ -22,16 +22,16 @@ Next.js App Router, TypeScript, Tailwind CSS v4.
 ## Running it locally
 
 ```bash
-pnpm install
-pnpm dev
+npm install
+npm run dev
 ```
 
 Open http://localhost:3000.
 
 ```bash
-pnpm build    # production build
-pnpm start    # serve the production build
-pnpm lint     # eslint
+npm run build    # production build
+npm start        # serve the production build
+npm run lint     # eslint
 ```
 
 Node 20 or newer.

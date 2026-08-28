@@ -20,13 +20,13 @@ export default function SiteFooter() {
       <div className="mx-auto grid max-w-[1120px] gap-10 px-6 py-12 sm:grid-cols-2 md:grid-cols-[1.4fr_1fr_1fr]">
         <div>
           <div className="font-heading text-2xl text-n100 dark:text-n900">{site.name}</div>
-          <div className="mt-1 text-xs uppercase tracking-[0.06em] text-n500">{site.school}</div>
-          <p className="mt-4 max-w-[26em] text-sm leading-relaxed text-n500">
+          <div className="mt-1 text-xs uppercase tracking-[0.06em] text-n200/65">{site.school}</div>
+          <p className="mt-4 max-w-[26em] text-sm leading-relaxed text-n200/70">
             Student-run. Not an official publication of the university. A Dhivehi version is on the way.
           </p>
         </div>
         <div>
-          <div className="text-xs uppercase tracking-[0.06em] text-n500">Quick links</div>
+          <div className="text-xs uppercase tracking-[0.06em] text-n200/65">Quick links</div>
           <div className="mt-4 grid gap-2 text-[15px]">
             {quickLinks.map((l) => (
               <a
@@ -34,29 +34,29 @@ export default function SiteFooter() {
                 href={l.href}
                 target="_blank"
                 rel="noopener"
-                className="text-med-400 hover:text-med-300"
+                className="text-med-400 hover:text-n100 hover:no-underline"
               >
                 {l.label}
               </a>
             ))}
-            <Link href="/about" className="text-med-400 hover:text-med-300">
+            <Link href="/about" className="text-med-400 hover:text-n100 hover:no-underline">
               About this blog
             </Link>
           </div>
         </div>
         <div>
-          <div className="text-xs uppercase tracking-[0.06em] text-n500">Follow</div>
+          <div className="text-xs uppercase tracking-[0.06em] text-n200/65">Follow</div>
           <div className="mt-4 grid gap-2 text-[15px]">
             {social.map((l) => (
-              <a key={l.label} href={l.href} target="_blank" rel="noopener" className="text-med-400 hover:text-med-300">
+              <a key={l.label} href={l.href} target="_blank" rel="noopener" className="text-med-400 hover:text-n100 hover:no-underline">
                 {l.label}
               </a>
             ))}
           </div>
         </div>
       </div>
-      <div className="border-t border-n800 dark:border-n400">
-        <div className="mx-auto max-w-[1120px] px-6 py-4 text-[13px] text-n500">
+      <div className="border-t border-n200/15">
+        <div className="mx-auto max-w-[1120px] px-6 py-4 text-[13px] text-n200/60">
           © {new Date().getFullYear()} {site.name}
         </div>
       </div>

@@ -6,6 +6,27 @@
   --font-heading: var(--font-caprasimo), Georgia, serif;
   --font-body: var(--font-figtree), system-ui, sans-serif;
 
+  /* ────────────────────────────────────────────────────────────
+     The colour theme. Ten named colours, used exactly as specified.
+
+       Main background      Warm Ivory      #F4F0E7
+       Cards                Warm Beige      #EAE3D7
+       Section alternate    Pale Blue       #DCE8EE
+       Section alternate    Pale Maroon     #E9DADD
+       Faculty primary      Burgundy        #6F2638
+       Faculty dark         Deep Wine       #4F202B
+       Student primary      MEDiCOS Blue    #2F6FA3
+       Student light        Medical Blue    #5BA6C4
+       Main text            Charcoal Brown  #292725
+       Secondary text       Warm Grey       #756E67
+
+     Two values are derived rather than named, because the theme
+     needs them and the table does not supply them:
+       --color-divider  #D8CFC0  hairline between Warm Ivory and Warm Beige
+       --color-on-dark  #FFFDF9  text sitting on Burgundy or Charcoal Brown
+     Everything else below is an alias onto one of the ten.
+     ──────────────────────────────────────────────────────────── */
+
   --color-bg: #f4f0e7;
   --color-surface: #eae3d7;
   --color-ink: #292725;
@@ -15,33 +36,33 @@
   --color-n200: #f4f0e7;
   --color-n300: #eae3d7;
   --color-n400: #d8cfc0;
-  --color-n500: #a99f92;
+  --color-n500: #756e67;
   --color-n600: #756e67;
-  --color-n700: #4f4a44;
-  --color-n800: #35312d;
+  --color-n700: #292725;
+  --color-n800: #292725;
   --color-n900: #292725;
 
   /* Burgundy — faculty, programme, primary actions */
   --color-brand: #6f2638;
-  --color-brand-100: #f5ebee;
+  --color-brand-100: #e9dadd;
   --color-brand-200: #e9dadd;
-  --color-brand-300: #d9bfc5;
-  --color-brand-400: #9a4354;
-  --color-brand-600: #5f2231;
+  --color-brand-300: #e9dadd;
+  --color-brand-400: #6f2638;
+  --color-brand-600: #4f202b;
   --color-brand-700: #6f2638;
   --color-brand-800: #4f202b;
-  --color-brand-900: #3a1720;
+  --color-brand-900: #4f202b;
 
-  /* Medical blue — student resources, links, hover states */
+  /* MEDiCOS Blue — student resources, links, icons, hover states */
   --color-med: #2f6fa3;
-  --color-med-100: #ecf3f7;
+  --color-med-100: #dce8ee;
   --color-med-200: #dce8ee;
-  --color-med-300: #bbd5e2;
+  --color-med-300: #dce8ee;
   --color-med-400: #5ba6c4;
-  --color-med-600: #2a6291;
-  --color-med-700: #275c86;
-  --color-med-800: #1f4a6d;
-  --color-med-900: #17364f;
+  --color-med-600: #2f6fa3;
+  --color-med-700: #2f6fa3;
+  --color-med-800: #2f6fa3;
+  --color-med-900: #2f6fa3;
 
   --radius-card: 1rem;
 }
@@ -99,11 +120,11 @@ body {
 }
 
 a {
-  color: var(--color-med-700);
+  color: var(--color-med);
   text-decoration: none;
 }
 a:hover {
-  color: var(--color-med-600);
+  color: var(--color-brand);
   text-decoration: underline;
 }
 
