@@ -119,13 +119,15 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-a {
-  color: var(--color-med);
-  text-decoration: none;
-}
-a:hover {
-  color: var(--color-brand);
-  text-decoration: underline;
+@layer base {
+  a {
+    color: var(--color-med);
+    text-decoration: none;
+  }
+  a:hover {
+    color: var(--color-brand);
+    text-decoration: underline;
+  }
 }
 
 :focus-visible {

@@ -9,7 +9,7 @@ export default function NotFound() {
       </p>
       <Link
         href="/"
-        className="mt-8 inline-block rounded-full bg-brand px-5 py-3 font-semibold text-n100 no-underline hover:bg-brand-600 hover:text-n100 hover:no-underline dark:text-n900"
+        className="mt-8 inline-block rounded-full bg-brand px-5 py-3 font-semibold text-white no-underline hover:bg-brand-600 hover:text-white hover:no-underline"
       >
         Back to the blog
       </Link>

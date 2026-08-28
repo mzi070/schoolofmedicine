@@ -131,7 +131,7 @@ export default async function YearPage({ params }: Params) {
                       { label: "Award", value: "MD" },
                       { label: "MNQF level", value: "7" },
                       { label: "Length", value: "5 yrs · 10 sem" },
-                      { label: "Credit points", value: "847" },
+                      { label: "Total credit points", value: "847" },
                       { label: "Mode", value: "Full-time" },
                       { label: "Campus", value: "Male'" },
                       { label: "Selection", value: "Merit based" },

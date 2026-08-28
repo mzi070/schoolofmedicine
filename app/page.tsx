@@ -67,7 +67,7 @@ export default function HomePage() {
           <div className="mt-6 flex flex-wrap gap-3">
             <Link
               href="/years/1"
-              className="rounded-full bg-brand px-5 py-3 font-semibold text-n100 no-underline transition-colors hover:bg-brand-600 hover:text-n100 hover:no-underline dark:text-n900"
+              className="rounded-full bg-brand px-5 py-3 font-semibold text-white no-underline transition-colors hover:bg-brand-600 hover:text-white hover:no-underline"
             >
               Start with Year 1
             </Link>
