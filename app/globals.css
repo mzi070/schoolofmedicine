@@ -1,0 +1,113 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-heading: var(--font-caprasimo), Georgia, serif;
+  --font-body: var(--font-figtree), system-ui, sans-serif;
+
+  --color-bg: #f4f0e7;
+  --color-surface: #eae3d7;
+  --color-ink: #292725;
+  --color-divider: #d8cfc0;
+
+  --color-n100: #fffdf9;
+  --color-n200: #f4f0e7;
+  --color-n300: #eae3d7;
+  --color-n400: #d8cfc0;
+  --color-n500: #a99f92;
+  --color-n600: #756e67;
+  --color-n700: #4f4a44;
+  --color-n800: #35312d;
+  --color-n900: #292725;
+
+  /* Burgundy — faculty, programme, primary actions */
+  --color-brand: #6f2638;
+  --color-brand-100: #f5ebee;
+  --color-brand-200: #e9dadd;
+  --color-brand-300: #d9bfc5;
+  --color-brand-400: #9a4354;
+  --color-brand-600: #5f2231;
+  --color-brand-700: #6f2638;
+  --color-brand-800: #4f202b;
+  --color-brand-900: #3a1720;
+
+  /* Medical blue — student resources, links, hover states */
+  --color-med: #2f6fa3;
+  --color-med-100: #ecf3f7;
+  --color-med-200: #dce8ee;
+  --color-med-300: #bbd5e2;
+  --color-med-400: #5ba6c4;
+  --color-med-600: #2a6291;
+  --color-med-700: #275c86;
+  --color-med-800: #1f4a6d;
+  --color-med-900: #17364f;
+
+  --radius-card: 1rem;
+}
+
+/* Dark mode inverts the ground to a warm dark; burgundy and blue stay as accents. */
+.dark {
+  --color-bg: #1c1917;
+  --color-surface: #262220;
+  --color-ink: #f2ece1;
+  --color-divider: #3a3431;
+
+  --color-n100: #1c1917;
+  --color-n200: #211e1c;
+  --color-n300: #2b2624;
+  --color-n400: #3a3431;
+  --color-n500: #6b625b;
+  --color-n600: #a49a90;
+  --color-n700: #cfc5b8;
+  --color-n800: #e6dcd0;
+  --color-n900: #f2ece1;
+
+  --color-brand: #c07d8c;
+  --color-brand-100: #2a1c20;
+  --color-brand-200: #3a262c;
+  --color-brand-300: #5b3a43;
+  --color-brand-400: #a0616f;
+  --color-brand-600: #cf94a1;
+  --color-brand-700: #d9a7b2;
+  --color-brand-800: #e6c3cb;
+  --color-brand-900: #f3e2e6;
+
+  --color-med: #7cb7d4;
+  --color-med-100: #16232b;
+  --color-med-200: #1d303b;
+  --color-med-300: #2c4a5c;
+  --color-med-400: #5b9cba;
+  --color-med-600: #96c7de;
+  --color-med-700: #a8d1e4;
+  --color-med-800: #c6e2ef;
+  --color-med-900: #e5f2f8;
+}
+
+html {
+  color-scheme: light;
+}
+html.dark {
+  color-scheme: dark;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--color-med-700);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--color-med-600);
+  text-decoration: underline;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-med);
+  outline-offset: 2px;
+}
